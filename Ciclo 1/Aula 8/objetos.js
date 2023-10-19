@@ -32,10 +32,25 @@ function newPerson(name,surname){
         name,
         surname,
         get fullName(){
-            return this.name + " " + this.surname
+            return `${this.name} ${this.surname}`
         }
     }
 }
 
 const newp1 = newPerson("James","Bond")
 console.log(newp1.fullName)
+
+function infoPerson(name,surname,i){
+    return{
+        name,
+        surname,
+        age: i,
+        info(){
+            console.log(`Your name is ${this.name}, your surname is ${this.surname}, and you are ${this.age} years old.`)
+        }
+    }
+}
+
+staffMember = infoPerson("Adam","Sandler", 40);
+console.log(staffMember)
+staffMember.info()
