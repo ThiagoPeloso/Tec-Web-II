@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="lista">
+
+    </ul>
+    <script>
+        const flamengo = document.createElement('div')
+        flamengo.innerText = 'Flamengo'
+        flamengo.style.backgroundColor = 'crimson'
+        document.body.append(flamengo)
+
+        const vasco = document.createElement('div')
+        vasco.innerText = 'Vasco'
+        vasco.style.backgroundColor = 'lightgrey'
+        document.body.append(vasco)
+
+        const botafogo = document.createElement('div')
+        botafogo.innerText = 'Botafogo'
+        botafogo.style.backgroundColor = 'grey'
+        document.body.append(botafogo)
+
+        const fluminense = document.createElement('div')
+        fluminense.innerText = 'Fluminense'
+        fluminense.style.backgroundColor = 'green'
+        document.body.append(fluminense)
+
+        let lista = document.getElementById("lista")
+        let li = document.createElement('li')
+        li.textContent = "isto é um li"
+        lista.appendChild(li)
+    </script>
+</body>
+</html>
